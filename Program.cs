@@ -1,6 +1,4 @@
-﻿// Conrad Dudziak -- CSS436 Autumn 2019
-// Program 2 - REST
-// This application takes a command line input as the name of a city,
+﻿// This application takes a command line input as the name of a city,
 // and provides information about the weather for that city. This is a client
 // app which consumes the RESTful OpenWeather API.
 
@@ -41,7 +39,7 @@ namespace WeatherREST {
 			try {
 				using (var client = new HttpClient()) {
 					client.BaseAddress = new Uri("http://api.openweathermap.org/data/2.5/");
-					string key = "9042b39994d03687ef3e11583153d97e";
+					string key = "REDACTED";
 					HttpResponseMessage response = client.GetAsync("weather?q=" + cityName + "&APPID=" + key).Result;
 					response.EnsureSuccessStatusCode();
 					string result = response.Content.ReadAsStringAsync().Result;
