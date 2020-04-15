@@ -1,6 +1,3 @@
-Conrad Dudziak - CSS 436 Autumn 2019
-Program 2: REST
-
 USES:
   Microsoft.NET
   Framework64\v4.0.30319
